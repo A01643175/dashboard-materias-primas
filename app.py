@@ -235,7 +235,15 @@ for material, path in PRICE_FILES.items():
 
     with col_inputs:
         st.markdown("**Parámetros del escenario**")
-
+        
+        st.markdown(
+            """
+            **Escenarios sugeridos:**  
+            - Pesimista → multiplicador **2.0**  
+            - Base → multiplicador **1.0**  
+            - Optimista → multiplicador **0.3**
+            """
+        )
         share_cogs_pct = st.number_input(
             f"% del COGS atribuible a {material}",
             min_value=0.0,
