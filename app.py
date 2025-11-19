@@ -194,7 +194,6 @@ st.sidebar.header("Estado de resultados base")
 st.sidebar.dataframe(is_df, use_container_width=True)
 st.sidebar.metric("Revenue", f"{base_is['sales']:,.0f}")
 st.sidebar.metric("Net Income", f"{base_is['net']:,.0f}")
-st.sidebar.write(f"Tasa efectiva de impuesto: {base_is['tax_rate']:.2%}")
 
 # ---------- SECCIONES POR MATERIAL ----------
 for material, path in PRICE_FILES.items():
